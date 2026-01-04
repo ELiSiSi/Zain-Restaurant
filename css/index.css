@@ -26,16 +26,16 @@ body {
 
 body {
 
- 
+
 
 }
 }
 .container {
   width: 90%;
-   
+
   margin: auto;
 }
- 
+
 
 /* start header */
 /* start header */
@@ -60,7 +60,7 @@ font-weight: 900;
   animation-name: thebest;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  
+
 }
 
 @keyframes thebest {
@@ -91,13 +91,13 @@ font-weight: 900;
   .header {
        background-color: #fff;
     height: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     padding-top: -200px;
     margin-top: 0px;
   }
 
   .header img {
-    width: 40px;
+    width: 50px;
   }
 
   .header .container .name {
@@ -105,7 +105,7 @@ font-weight: 900;
    }
 }
 
- 
+
 
 /* start  profile */
 /* start  profile */
@@ -134,7 +134,7 @@ font-weight: 900;
      margin-top: 30px;
    }
 @media (max-width: 500px) {
-  
+
 }
 
 .profile .text span {
@@ -167,10 +167,10 @@ font-weight: 900;
 /* start   contant */
 
 .contant {
- 
+
   padding-top: 50px;
 
- 
+
   text-align: center;
   padding-bottom: 48px;
 }
@@ -229,14 +229,14 @@ font-weight: 900;
 
 .contant .col:hover i {
   color: #000000;
- 
+
 }
 
 @media (min-width: 500px) {
   .contant {
     padding-top: 30px;
 
- 
+
     text-align: center;
     padding-bottom: 48px;
   }
@@ -274,7 +274,7 @@ font-weight: 900;
     padding-left: 0px;
     width: 350px;
 
- 
+
     text-align: center;
     padding-bottom: 150px;
   }
