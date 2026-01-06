@@ -1,5 +1,5 @@
 :root {
-   --main-color: #d70000;
+  --main-color: #d70000;
   --secondary-color: #000000;
 }
 
@@ -93,9 +93,7 @@ body {
   font-size: 18px;
 }
 
-.header .container .name span {
-  color: var(--secondary-color);
-}
+
 
 @media (max-width: 768px) {
   .header {
@@ -123,18 +121,29 @@ body {
 
 .title .text {
   font-size: 50px;
-  color: white;
+  color: #ffe100;
   transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgba(111, 1, 1, 0.7) 0%, rgb(228, 13, 13) 100%);
+  padding: 15px 40px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border: 4px solid #ffe100;
+  font-weight: bold;
 }
 
 .title .text:hover {
-  color: #ffe100;
+  color: #ffffff;
   font-size: 55px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 0, 0.3);
 }
 
 @media (max-width: 768px) {
   .title .text {
     font-size: 30px;
+    padding: 12px 30px;
   }
 
   .title .text:hover {
@@ -143,6 +152,33 @@ body {
 }
 
 /* Offer Section */
+.offer {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.offer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 15%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.3) 85%,
+    transparent 100%);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+.offer:last-of-type::after {
+  display: none;
+}
+
 .offer .container {
   margin: auto;
   margin-top: 50px;
@@ -154,6 +190,15 @@ body {
 }
 
 @media (max-width: 500px) {
+  .offer {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .offer::after {
+    width: 90%;
+  }
+
   .offer .container {
     width: 99%;
     padding-bottom: 10px;
@@ -167,7 +212,7 @@ body {
 .offer .container img {
   margin: auto;
   width: 100%;
-  border: #000 solid 5px;
+  border: #ffe100 solid 5px;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
@@ -182,9 +227,9 @@ body {
   margin-top: 50px;
   width: 100%;
   padding-bottom: 50px;
-    text-align: center;
-
+  text-align: center;
 }
+
 .click .containerClick form {
   margin-bottom: 30px;
   text-align: center;
@@ -192,16 +237,17 @@ body {
 
 .containerClick form .text {
   font-size: 40px;
-  color: var(--secondary-color);
+  font-weight: bold;
+  color: #ffffff;
   line-height: 2;
 }
 
-
 .containerClick form a {
   font-size: 40px;
+  font-weight: bold;
   background-color: rgba(120, 56, 56, 0.447);
-  color: #000;
-  border: 2px solid black;
+  color: #ffe100;
+  border: 2px solid #ffe100;
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
@@ -215,4 +261,3 @@ body {
   background-color: rgba(120, 56, 56, 0.7);
   transform: translateY(-2px);
 }
-
